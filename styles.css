@@ -1,0 +1,363 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/*** end of setup styles ***/
+
+/*** global styles ***/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 320px;
+    /* note the cormorant garamond was included in the specs but the PDF provided has the wrong font */
+    font-family: 'Cormorant Garamond', Georgia, Serif;
+    line-height: 29px;
+}
+
+.wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+}
+/* end of global styles */
+
+/* resetting styles */
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* end of reset styles */
+
+/* font styles */
+h1, 
+h2,
+h3,
+h4 {
+    font-family: 'Fredericka the Great';
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+h2 {
+    font-size: 5.1rem;
+}
+
+h3 {
+    font-size: 4.9rem;
+    text-align: center;
+    color: #152D20;
+}
+
+h4 {
+    font-size: 3.5rem;
+    color: #152D20;
+}
+
+.extraLinks {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #FCFCFC;
+}
+
+p {
+    font-size: 2.2rem;
+    font-weight: semi-bold;
+}
+
+button {
+    font-size: 1.8rem;
+    font-weight: 600;
+    background-color: #152D20;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    box-shadow: none;
+    font-family: 'Cormorant Garamond', Georgia, Serif;
+}
+
+img {
+    width: 100%;
+}
+/* end of font styles */
+
+
+/* header styles */
+header {
+    background-image: url(./animal-land-assets/image-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.headerNav li {
+    float: left;
+    margin: 30px 12px;
+}
+
+.headerNav a {
+    font-size: 2.2em;
+    padding: 5px 7px;
+}
+
+.headerNav a:hover {
+    background: white;
+    color: #152D20;
+}
+
+header h1{
+    font-size: 12em;
+    line-height: 117px;
+    color:  #FCFCFC;
+    text-align: right;
+    max-width: 40vw;
+    float: right;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.socialMedia {
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+
+.socialMedia li{
+    clear: both;
+    font-size: 3rem;
+    padding: 10px;
+    float: right;
+    margin-right: 30px;
+}
+/* end of header styles */
+
+
+/*Start of Suzies Story section*/
+.story {
+    background: #152D20;
+    padding: 60px 0px;
+}
+
+.story img {
+    width: 25%;
+    height: 25%;
+    float: left;
+    margin: 0px 50px 0px 0px; 
+    background: yellow;
+}
+
+.storyInfo {
+    color: white;
+    width: 70%;
+    float: left;
+    padding-top: 10px;
+}
+
+.readMoreWhite {
+    background: white;
+    color: #152D20;
+}
+/* end of Suzie's story section */
+
+/* Start of friends section */
+.friends {
+    background: #C3D3CB;
+    clear: both;
+    padding-bottom: 50px;
+}
+
+h3 {
+    padding: 60px 0px;
+    max-width: 40vw;
+    line-height: 60px;
+    margin: 0 auto;
+}
+
+
+.friendImages li {
+    max-width: calc(100% / 3 - 40px);
+    float: left;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.friendImages li:nth-of-type(2) {
+    margin: 0px 60px;
+}
+
+
+/*** start of siteLinks section styles ***/
+.extraLinks {
+    background: #152D20;
+    line-height: 40px; 
+}
+
+.siteLinks li {
+    float: left;
+    text-align: center;
+    padding: 80px 0px 60px 0px;
+    width: calc(100%/3);
+}
+
+.siteLinks a {
+    position: relative;
+    max-width: 50%;
+}
+
+i {
+    position: absolute;
+    top: -40px;
+    left: 40%;
+}
+
+.siteLinks li a span {
+    display: block;
+}
+
+/*** end of siteLinks section styles ***/
+
+
+/*** start of blogPosts section style ***/
+.blogPostImage img {
+    width: calc(50vw);
+    display: block;
+}
+
+.blogPostContent {
+    width: calc(50vw - 10px);
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+/*** end of blogPosts section style ***/
+
+
+/*** start of footer styles ***/
+footer {
+    background: #152D20;
+    color: white;
+}
+
+.footerContent {
+    padding: 50px 0px;
+}
+
+.footerNav a, 
+h5 {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.footerNav {
+    float: left;  
+    width: 25%;;
+}
+
+.subscribe {
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+}
+
+input[type=email],
+input[type=submit] {
+    padding: 5px 20px;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', Georgia, Serif;
+    border: 2px solid black;
+    margin-left: 0px;
+}
+
+input[type=email] {
+    padding-right: 200px;
+}
+
+.contact {
+    float: left;
+    text-align: right;
+    width: 25%;
+}
+
+.copyright {
+    background: black;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright p {
+    font-size: 2rem;
+}
+
+/* end of footer styles */
+
+
+
+/* start of responsive styles */
+@media (max-width: 1200px) {
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 90vh;
+    }
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* end of responsive styles */
