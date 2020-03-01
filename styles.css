@@ -1,3 +1,4 @@
+/*** set up styles ***/
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
 
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
@@ -7,8 +8,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 *, *:before, *:after {box-sizing: inherit}
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
-
 /*** end of setup styles ***/
+
+
 
 /*** global styles ***/
 html {
@@ -17,8 +19,7 @@ html {
 
 body {
     min-width: 320px;
-    /* note the cormorant garamond was included in the specs but the PDF provided has the wrong font */
-    font-family: 'Cormorant Garamond', Georgia, Serif;
+    font-family: 'Roboto, Georgia, Serif';
     line-height: 29px;
 }
 
@@ -28,12 +29,19 @@ body {
     margin: 0 auto;
     clear: both;
 }
-/* end of global styles */
 
-/* resetting styles */
+img {
+    width: 100%;
+    display: block;
+}
+/*** end of global styles ***/
+
+
+
+/*** resetting styles ***/
 a {
     color: inherit;
-    text-decoration: inherit;
+    text-decoration: none;
 }
 
 ul {
@@ -41,20 +49,21 @@ ul {
     margin: 0;
     list-style: none;
 }
-/* end of reset styles */
+/*** end of reset styles ***/
 
-/* font styles */
+
+
+/*** font styles ***/
 h1, 
 h2,
 h3,
 h4 {
     font-family: 'Fredericka the Great';
     text-transform: uppercase;
-    color: white;
+    color: #FCFCFC;
     margin: 0;
     font-weight: 400;
 }
-
 
 h2 {
     font-size: 5.1rem;
@@ -77,9 +86,11 @@ h4 {
     color: #FCFCFC;
 }
 
+    /* was told the sans serif font was roboto, added this in to the fonts and used light to try to match the provided PDF as much as */
 p {
     font-size: 2.2rem;
-    font-weight: semi-bold;
+    font-weight: 300;
+    font-family: 'roboto';
 }
 
 button {
@@ -93,25 +104,33 @@ button {
     font-family: 'Cormorant Garamond', Georgia, Serif;
 }
 
-img {
-    width: 100%;
-}
-/* end of font styles */
+/*** end of font styles ***/
 
 
-/* header styles */
+
+/*** header styles ***/
 header {
     background-image: url(./animal-land-assets/image-1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     color: #FCFCFC;
     text-transform: uppercase;
     position: relative;
 }
 
+.mobileHeaderNav {
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 2rem;
+
+}
+
 .headerNav li {
     float: left;
-    margin: 30px 12px;
+    margin: 20px 10px;
 }
 
 .headerNav a {
@@ -125,14 +144,13 @@ header {
 }
 
 header h1{
-    font-size: 12em;
+    font-size: 12rem;
     line-height: 117px;
-    color:  #FCFCFC;
     text-align: right;
     max-width: 40vw;
     float: right;
     position: absolute;
-    top: 20%;
+    top: 18%;
     right: 10%;
 }
 
@@ -146,15 +164,21 @@ header h1{
     clear: both;
     font-size: 3rem;
     padding: 10px;
-    float: right;
     margin-right: 30px;
 }
-/* end of header styles */
+/*** end of header styles ***/
 
 
-/*Start of Suzies Story section*/
-.story {
+
+/*** story section styles ***/
+
+    /* setting up green background for multiple sections */
+.green {
     background: #152D20;
+    color: white;
+}
+
+.story {
     padding: 60px 0px;
 }
 
@@ -162,24 +186,30 @@ header h1{
     width: 25%;
     height: 25%;
     float: left;
-    margin: 0px 50px 0px 0px; 
+    margin: 0px 30px 0px 0px; 
     background: yellow;
 }
 
 .storyInfo {
-    color: white;
     width: 70%;
     float: left;
-    padding-top: 10px;
 }
 
 .readMoreWhite {
     background: white;
     color: #152D20;
 }
-/* end of Suzie's story section */
 
-/* Start of friends section */
+button:hover,
+input[type=submit]:hover {
+    text-decoration: underline;
+}
+
+/*** end of story section ***/
+
+
+
+/*** friends section ***/
 .friends {
     background: #C3D3CB;
     clear: both;
@@ -188,27 +218,26 @@ header h1{
 
 h3 {
     padding: 60px 0px;
-    max-width: 40vw;
+    max-width: 50%;
     line-height: 60px;
     margin: 0 auto;
 }
 
-
 .friendImages li {
-    max-width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 50px / 3);
     float: left;
-    display: block;
-    margin-bottom: 0px;
-}
-
-.friendImages li:nth-of-type(2) {
-    margin: 0px 60px;
+    margin-right: 25px
 }
 
 
-/*** start of siteLinks section styles ***/
+.friendImages li:nth-of-type(3) {
+    margin-right: 0;
+}
+
+
+
+/*** extra links section ***/
 .extraLinks {
-    background: #152D20;
     line-height: 40px; 
 }
 
@@ -226,7 +255,7 @@ h3 {
 
 i {
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: 40%;
 }
 
@@ -234,18 +263,21 @@ i {
     display: block;
 }
 
-/*** end of siteLinks section styles ***/
+.extraLinks .linkLower {
+    margin-top: 20px;
+}
+/*** end of extra links section ***/
 
 
-/*** start of blogPosts section style ***/
+
+/*** blogPosts section style ***/
 .blogPostImage img {
     width: calc(50vw);
-    display: block;
 }
 
 .blogPostContent {
     width: calc(50vw - 10px);
-    padding-top: 5%;
+    padding-top: 8%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -260,12 +292,7 @@ i {
 /*** end of blogPosts section style ***/
 
 
-/*** start of footer styles ***/
-footer {
-    background: #152D20;
-    color: white;
-}
-
+/*** footer styles ***/
 .footerContent {
     padding: 50px 0px;
 }
@@ -285,16 +312,24 @@ footer p {
     margin: 0;
 }
 
+.footerNav,
+.subscribe,
+.contact {
+    float: left;
+}
+
 .footerNav {
-    float: left;  
-    width: 25%;;
+    width: 25%;
 }
 
 .subscribe {
-    float: left;
-    width: 50%;
+    width: 40%;
     text-align: center;
-    height: 100%;
+}
+
+.contact {
+    text-align: right;
+    width: 35%;
 }
 
 input[type=email],
@@ -317,10 +352,8 @@ input[type=email] {
     padding-right: 200px;
 }
 
-.contact {
-    float: left;
-    text-align: right;
-    width: 25%;
+.socialMediaFooter {
+    display: none;
 }
 
 .copyright {
@@ -334,30 +367,296 @@ input[type=email] {
     font-size: 2rem;
 }
 
-/* end of footer styles */
+/*** end of footer styles ***/
 
 
 
-/* start of responsive styles */
+/*** responsive styles ***/
+
+/*** BP 1 ***/
 @media (max-width: 1200px) {
+
+    /* BP1 header styles */
     header {
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 90vh;
+        background-position: center;
+    }
+
+    header h1 {
+        font-size: 9rem;
+        top: 10%;
+        right: 10%;
+    }
+
+    header .socialMedia li{
+        font-size: 4rem;
+    }
+    
+
+    /* BP1 story section styles */
+    h2 {
+        font-size: 4.5rem;
+    }
+
+    p {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .story img {
+        width: 25vw;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
+
+    .story .wrapper {
+        width: 98%;
+    }
+
+
+    /* BP1 friends section styles */
+    h3 {
+        padding: 30px;
+    }
+
+
+    /* BP1 extra links section styles */
+    .siteLinks li {
+        padding: 80px 0px 40px 0px;
+    }
+
+
+    /* BP1 blog posts section styles */
+    .blogPostContent {
+        width: calc(50vw - 10px);
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    /* BP1 footer section styles */
+    input[type=email],
+    input[type=submit] {
+        padding: 5px 15px;
+        font-size: 2rem;
+    }
+
+
+/*** BP 2 ***/
+@media (max-width: 990px) {
+
+    /* BP2 header section styles */
+    header {
+        background-size: cover;
+        background-position-x: -200px;
+    }
+
+    .mobileHeaderNav    {
+        display: inline-block;
+        right: 20px;
+    }
+
+    .headerNav ul {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        width: 200px;
+        left: 10px;
+        top: 5%;
+        line-height: 35px;
+    }
+
+    /* BP2 story section styles */
+    .story {
+        padding: 30px 0px;
+
+    }
+
+    .story img {
+        width: 300px;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .storyInfo {
+        margin-top: 30px;
+        padding: 0 25px;
+        width: 100%;
+    }
+
+    .readMoreWhite {
+        margin: 0 auto;
+        display: block;
+    }
+
+    /* BP2 friends section */
+    h3 {
+        max-width: 80%;
+        line-height: 50px;
+        margin: 0 auto;
+    }
+
+    .friendImages li:nth-of-type(3) {
+        display: none;
+    }
+
+    .friendImages li {
+        width: calc(100% / 2 - 20px / 2);
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    /* BP2 blog section */
+    .blogPostContent {
+        padding: 1%;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    .blogPostContent p,
+    .blogPostContent button {
+        font-size: 1.7rem;
+        line-height: 23px;
+    }
+
+    .blogPostContent p {
+        margin: 10px 0px;
+    }
+
+    .blogPostContent button {
+        padding: 10px;
+    }
+
+    /* BP2 footer section styles */
+    .footerNav,
+    .subscribe,
+    .contact {
+        float: none;
+        padding: 30px 10px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+/*** BP 3 ***/
+
+@media (max-width: 768px) {
+    /* BP3 friends styles */
+    h3 {
+        font-size: 3.5rem;
+    }
+
+    /* BP3 extra links styles */
+
+    .siteLinks {
+        padding-top: 50px;
+    }
+    
+    .extraLinks li {
+        width: 100%;
+        display: block;
+        float: none;
+        padding: 30px 0px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    /* BP3 blog post styles */
+
+    .floatLeft,
+    .floatRight {
+        float: none;
+        width: 100%;
+        display: block;     
+    }
+    
+    .blogPostImage img {
+        width: 100vw;
+    }
+
+    h4{
+        line-height: 35px;
+    }
+
+    .blogPostContent {
+        text-align: center;
+        padding: 30px 20px;
+        line-height: 29px;
+    }
+
+    .blogPostContent p {
+        margin: 30px 0px;
+    }
+    
+}
+
+/*** BP 4 ***/
+@media (max-width: 480px) {
+    /* BP4 header styles */
+    header {
+    background-position-x: -300px;
+    }
+
+    .socialMedia {
+        display: none;
+    }
+
+    /* was told in previous experience to never remove important content during responsive. Added the removed social media icons to below contact in the footer. */
+    .socialMediaFooter {
+        display: block;
+    }
+    
+    .socialMediaFooter a {
+        font-size: 3rem;
+        width: calc(100% / 4);
+        float: left;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* BP4 story styles */
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    /* checked accessibility went with suggested 16 as smallest size */
+    .story p {
+        font-size: 1.6rem;
+    }
+
+    /* BP4 friends styles */
+    .friends {
+        padding: 0px;
+    }
+
+    h3 {
+        font-size: 3rem;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    /* BP4 blog sections styles */
+    h4 {
+        font-size: 2.4rem;
+    }
+
+    /* BP4 footer sections styles */
+    input[type=email],
+    input[type=submit] {
+        width: 300px;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 1.8rem;
     }
 }
 
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-}
-
-/* end of responsive styles */
+/*** end of responsive styles ***/

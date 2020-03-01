@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project One - Animal Refuge</title>
     <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600|Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Cormorant+Garamond|Roboto:300,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
@@ -13,27 +13,44 @@
 <body>
     <header>
         <nav class="headerNav">
+            <div class="mobileHeaderNav"><a href class="fa fa-bars"></a></div>
             <ul class="clearfix wrapper">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
             </ul>
         </nav>
         <h1>Animal Refuge</h1>
         <nav class="socialMedia">
             <ul>
-                <li><a href="#" class="fa fa-instagram"></a></li>
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-snapchat"></a></li>
-                <li><a href="#" class="fa fa-twitter"></a></li>      
+                <li>
+                    <a href="#" class="fa fa-instagram" aria-label="Instagram link"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-facebook" aria-label="Facebook link"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-snapchat" aria-label="Snapchat link"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa fa-twitter" aria-label="Twitter link"></a>
+                </li>      
             </ul>
         </nav>
     </header>
     
-    <section class="story clearfix">
-        <div class="wrapper storyContent">
-            <div class="storyImage">
+    <section class="story green clearfix ">
+        <div class="storyContent wrapper">
+            <div>
                 <img src="./animal-land-assets/image-6.jpg" alt="Suzie the cat lying on a couch looking at the camera">
             </div>
             <div class="storyInfo">
@@ -48,41 +65,48 @@
         <div class="wrapper">
             <h3>Some of our friends</h3>
             <ul class="friendImages clearfix">
-                <li><img src="./animal-land-assets/image-5.jpg" alt="A lizard holding on to a branch"></li>
-                <li><img src="./animal-land-assets/image-4.jpg" alt="A sheep looking into the camera with a herd of sheep in the background"></li>
-                <li><img src="./animal-land-assets/image-3.jpg" alt="A parrot eating a seed in it's claw"></li>
+                <li>
+                    <img src="./animal-land-assets/image-5.jpg" alt="A lizard holding on to a branch">
+                </li>
+                <li>
+                    <img src="./animal-land-assets/image-4.jpg" alt="A sheep looking into the camera with a herd of sheep in the background">
+                </li>
+                <li>
+                    <img src="./animal-land-assets/image-3.jpg" alt="A parrot eating a seed in it's claw">
+                </li>
             </ul>
         </div>
     </section>
 
-    <section class="extraLinks">
+    <section class="extraLinks green">
         <div class="wrapper">
             <ul class="siteLinks clearfix">
                 <li>
-                    <a href="#"><i class="fa fa-paw"></i>Animal <span>Spotlight</span></a>
+                    <a href="#"><i class="fa fa-paw"></i>Animal<span>Spotlight</span></a>
                 </li>
-                <li>
+                <li class="linkLower">
                     <a href="#"><i class="fa fa-calendar-check-o"></i>Events</a>
                 </li>
-                <li>
+                <li class="linkLower">
                     <a href="#"><i class="fa fa-shopping-bag"></i>Merch</a>
                 </li> 
             </ul>
         </div>
     </section>
 
-    <section>
+
+    <section class="blogSection">
         <article class="clearfix">
+            <div class="blogPostImage floatRight">
+                <img src="animal-land-assets/image-7.png" alt="Two zebras in the wild with a gazelle in the background">
+            </div>
             <div class="blogPostContent floatLeft">
                 <h4>Fascinating facts about zebras</h4>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis voluptates quibusdam quia amet? Consequuntur nam voluptate repudiandae magnam ut tempora fuga et. Temporibus libero veritatis, optio, inventore facilis quasi obcaecati nemo, error fuga unde quaerat doloribus?</p>
                 <button>Read more</button>
             </div>
-            <div class="blogPostImage floatRight">
-                <img src="animal-land-assets/image-7.png" alt="Two zebras in the wild with a gazelle in the background">
-            </div>
         </article>
-        <article class="blogPost clearfix">
+        <article class="clearfix">
             <div class="blogPostImage floatLeft">
                 <img src="animal-land-assets/image-2.jpg" alt="A kitten holds it's paw against a human's hand">
             </div>
@@ -94,7 +118,7 @@
         </article>
     </section>
 
-    <footer>
+    <footer class="green">
         <div class="footerContent wrapper clearfix">
             <nav class="footerNav">
                 <ul>
@@ -116,10 +140,28 @@
                 <h5>Contact</h5>
                 <p>info@email.com | 123 - 456 -789<br>123 some road, Toronto, ON<br>A5A 5A5, Canada</p>
             </div>
-        </div>
-            <div class="copyright">
-                <p>Copyright © 2019 HackerYou</p>
+            <div>
+                <nav class="socialMediaFooter">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#" class="fa fa-instagram" aria-label="Instagram link"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-facebook" aria-label="Facebook link"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-snapchat" aria-label="Snapchat link"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="fa fa-twitter" aria-label="Twitter link"></a>
+                        </li>      
+                    </ul>
+                </nav>
             </div>
+        </div>
+        <div class="copyright">
+                <p>Copyright © 2019 HackerYou</p>
+        </div>
     </footer>
 </body>
 
